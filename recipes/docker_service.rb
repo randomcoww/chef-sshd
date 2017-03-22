@@ -1,4 +1,4 @@
-service "ssh" do
+service "sshd" do
   start_command "/etc/init.d/ssh start"
   stop_command "/etc/init.d/ssh stop"
   restart_command "/etc/init.d/ssh restart"
