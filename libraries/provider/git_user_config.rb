@@ -44,6 +44,8 @@ class ChefSshd
           r.repository new_resource.git_repo
           r.branch new_resource.git_branch
           r.destination new_resource.release_path
+          r.user new_resource.user
+          r.group new_resource.group
         end
       end
     end

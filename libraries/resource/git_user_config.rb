@@ -9,10 +9,13 @@ class ChefSshd
       property :exists, [TrueClass, FalseClass]
       property :revision, String
 
-      property :release_path, String, default: lazy { ::File.join(home_path, '.ssh') }
+      property :release_path, String, default: lazy { ::File.join(home, '.ssh') }
       property :git_repo, String
       property :git_branch, String
-      property :home_path, String
+
+      property :user, String
+      property :group, String
+      property :home, String
     end
   end
 end
