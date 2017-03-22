@@ -21,7 +21,8 @@ class ChefSshd
         git_repo.run_action(:sync)
 
         if !current_resource.exists || current_resource.revision != git_provider.find_current_revision
-          converge_by("Fetch user config: #{new_resource}")
+          converge_by("Fetch user config: #{new_resource}") do
+          end
         end
       end
 
