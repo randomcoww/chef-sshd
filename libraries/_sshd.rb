@@ -1,4 +1,5 @@
-module ConfigGenerator
+module SshdConfig
+
   ## sample source config
   # {
   #   "ClientAliveInterval" => 0,

@@ -1,7 +1,7 @@
 class ChefSshd
   class Resource
     class Config < Chef::Resource
-      include ConfigGenerator
+      include SshdConfig
 
       resource_name :sshd_config
 
